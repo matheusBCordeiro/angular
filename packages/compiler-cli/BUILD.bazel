@@ -60,9 +60,8 @@ pkg_npm(
     ],
 )
 
-ts_api_guardian_test(
     name = "error_code_api",
-    actual = "packages/compiler-cli/npm_package/src/ngtsc/diagnostics/src/error_code.d.ts",
+    actual = "packages/compiler-cli/src/ngtsc/diagnostics/src/error_code.d.ts",
     data = [
         ":npm_package",
         "//goldens:public-api",
@@ -72,7 +71,7 @@ ts_api_guardian_test(
 
 ts_api_guardian_test(
     name = "compiler_options_api",
-    actual = "packages/compiler-cli/npm_package/src/ngtsc/core/api/src/public_options.d.ts",
+    actual = "packages/compiler-cli/src/ngtsc/core/api/src/public_options.d.ts",
     data = [
         ":npm_package",
         "//goldens:public-api",
